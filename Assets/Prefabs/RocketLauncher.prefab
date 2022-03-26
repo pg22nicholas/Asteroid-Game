@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8178524627337540859
+--- !u!1 &652213387062400339
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,41 +8,41 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8178524627337540860}
-  - component: {fileID: 8178524627337540861}
+  - component: {fileID: 1635950521649819160}
+  - component: {fileID: 1289341723960334165}
   m_Layer: 0
-  m_Name: LaserWeapon
+  m_Name: RocketLauncher
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8178524627337540860
+--- !u!4 &1635950521649819160
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8178524627337540859}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.077943146, z: 0.6909292}
+  m_GameObject: {fileID: 652213387062400339}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.7323232, y: 0.6746851, z: 0.29185063}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8178524627337540861
+--- !u!114 &1289341723960334165
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8178524627337540859}
+  m_GameObject: {fileID: 652213387062400339}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0d825abd4046f994b8c95ae212c6dffc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_cooldown: 0.25
+  m_cooldown: 1.55
   m_input: 323
-  m_projectilePrefab: {fileID: 6252724099896718116, guid: b69343c6387beff41a9e29eef8109c3d, type: 3}
+  m_projectilePrefab: {fileID: 4154326097024228732, guid: 908955b2b7156d646a859bdf307d70f5, type: 3}

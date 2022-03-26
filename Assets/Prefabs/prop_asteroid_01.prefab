@@ -29,21 +29,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.7874478
   m_Center: {x: 0, y: 0.000000029802322, z: -0.000000029802322}
---- !u!114 &3279937158467535209
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5017566894331171217}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2db4fd2e74ac1dd4d9d7322654743441, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_damage: 1
-  m_team: 10
-  m_minimumVelocity: 5
 --- !u!114 &4984348862731466483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72,6 +57,21 @@ MonoBehaviour:
   m_speed: 10
   m_spinForce: 15.59
   m_rigidBody: {fileID: 4982018911986206024}
+--- !u!114 &8761809017924552826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5017566894331171217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2db4fd2e74ac1dd4d9d7322654743441, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_damage: 1
+  m_team: 0
+  m_minimumVelocity: 5
 --- !u!1001 &5017566894331205425
 PrefabInstance:
   m_ObjectHideFlags: 0

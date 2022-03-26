@@ -20,6 +20,8 @@ public class ShipMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // Prevent bullets from colliding with ship and other bullets
+        Physics.IgnoreLayerCollision(7, 7);
         if (m_rigidBody == null)
         {
             //throw new System.Exception("");

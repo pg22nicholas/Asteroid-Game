@@ -11,6 +11,7 @@ public class Shotgun : Weapon
 
     protected override void Shoot()
     {
+        // Splits each shot evenly across a spread angle
         for (int i = 0; i < m_shotCount; i++)
         {
             float angle = (i * m_spreadAngle / (m_shotCount - 1)) - (m_spreadAngle * 0.5f);

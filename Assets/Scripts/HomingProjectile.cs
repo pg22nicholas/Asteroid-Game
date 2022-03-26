@@ -3,11 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HomingProjectile : Projectile
+public class HomingProjectile : Bullet
 {
     [SerializeField] private int m_team = 0;
     [SerializeField] private float m_homingRadius = 5f;
-    [SerializeField] private LayerMask m_targetLayerMask;   // used to determine collisions with objects - allowed to collide with
+    [SerializeField] protected LayerMask m_targetLayerMask; 
 
     private Collider[] m_hitCollider = new Collider[10];
     private Transform m_target;
@@ -54,13 +54,5 @@ public class HomingProjectile : Projectile
         Quaternion rotation = Quaternion.LookRotation(direction);
         transform.rotation = rotation;
         m_rigidBody.velocity = transform.forward * m_speed;
-
-        // transform.LookAt(m_target); equivalent to ->>>
-        /*  Vector3 direction = (m_target.position - transform.position).normalized;
-            Quaternion rotation = Quaternion.LookRotation(direction);
-            transform.rotation = rotation;
-         */
-
-
     }
 }

@@ -1,25 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-2738473702556844625
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7151555454838146032}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96ab9b885ff09cf4182b37305e5b2fc0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_speed: 10
-  m_spinForce: 0
-  m_rigidBody: {fileID: 304818246961965045, guid: b69343c6387beff41a9e29eef8109c3d, type: 3}
-  m_team: 0
-  m_homingRadius: 5
-  m_targetLayerMask:
-    serializedVersion: 2
-    m_Bits: 64
 --- !u!1001 &7423484005071922179
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27,13 +7,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2738473702556844625, guid: b69343c6387beff41a9e29eef8109c3d, type: 3}
+      propertyPath: m_speed
+      value: 20.24
+      objectReference: {fileID: 0}
     - target: {fileID: 304818246961965043, guid: b69343c6387beff41a9e29eef8109c3d, type: 3}
       propertyPath: m_Name
       value: HomingLaser
-      objectReference: {fileID: 0}
-    - target: {fileID: 304818246961965044, guid: b69343c6387beff41a9e29eef8109c3d, type: 3}
-      propertyPath: m_targetLayerMask.m_Bits
-      value: 64
       objectReference: {fileID: 0}
     - target: {fileID: 304818246961965047, guid: b69343c6387beff41a9e29eef8109c3d, type: 3}
       propertyPath: m_RootOrder
@@ -79,11 +59,5 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 304818246961965044, guid: b69343c6387beff41a9e29eef8109c3d, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b69343c6387beff41a9e29eef8109c3d, type: 3}
---- !u!1 &7151555454838146032 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 304818246961965043, guid: b69343c6387beff41a9e29eef8109c3d, type: 3}
-  m_PrefabInstance: {fileID: 7423484005071922179}
-  m_PrefabAsset: {fileID: 0}

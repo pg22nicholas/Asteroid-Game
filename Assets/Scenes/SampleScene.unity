@@ -337,6 +337,8 @@ MonoBehaviour:
   m_spawnTimeMax: 0.3
   m_radius: 21
   m_asteroids:
+  - {fileID: 6487922859661005419, guid: fac509217969cbe4eaa2ad8cdb17d758, type: 3}
+  - {fileID: 7605842205599055680, guid: 38377b4d87059904b8f538cc1a293e1b, type: 3}
   - {fileID: 1270076729058935889, guid: 273d1497fa089c3448086e25f55301db, type: 3}
 --- !u!4 &804231297
 Transform:
@@ -901,7 +903,7 @@ PrefabInstance:
     - target: {fileID: 8178524627337540861, guid: f2f62b469b65aaa43933c81af003fc58, type: 3}
       propertyPath: m_projectilePrefab
       value: 
-      objectReference: {fileID: -2738473702556844625, guid: 5f5ebe1d90c80b0429e57856417f0ba5, type: 3}
+      objectReference: {fileID: 4538361727842163116, guid: 5f5ebe1d90c80b0429e57856417f0ba5, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2f62b469b65aaa43933c81af003fc58, type: 3}
 --- !u!1001 &9027820809208772516

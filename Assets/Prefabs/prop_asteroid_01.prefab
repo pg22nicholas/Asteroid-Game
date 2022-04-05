@@ -57,6 +57,23 @@ MonoBehaviour:
   m_speed: 10
   m_spinForce: 15.59
   m_rigidBody: {fileID: 4982018911986206024}
+--- !u!114 &8745506355730015115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5017566894331171217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 671d1f1588458054694f7b687e11bdaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_currentHp: 1
+  m_maxHp: 10
+  m_team: 10
+  m_scoreValue: 1
+  m_deathObject: {fileID: 100006, guid: 93485fd5fc2ccf2439cb3239186f6382, type: 3}
 --- !u!114 &8761809017924552826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70,7 +87,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_damage: 1
-  m_team: 0
+  m_team: 10
   m_minimumVelocity: 5
 --- !u!1001 &5017566894331205425
 PrefabInstance:

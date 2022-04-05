@@ -6,6 +6,7 @@ public class Bullet : Projectile
 {
 
     public virtual void OnHitAsteroid() {
-        Destroy(gameObject);
+        //Score.AddScore(1);
+        //Destroy(gameObject);
     }
 }

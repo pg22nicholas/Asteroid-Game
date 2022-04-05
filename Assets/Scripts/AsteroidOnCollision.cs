@@ -16,8 +16,8 @@ public class AsteroidOnCollision : MonoBehaviour
     private void OnCollisionEnter(Collision collision) 
     {
         // If asteroid hit by projectile
-        if (tryProjectileHit(collision.collider)) 
-            return;
+        // If (tryProjectileHit(collision.collider)) 
+           // return;
 
         if (collision.relativeVelocity.magnitude >= m_minimumVelocity)
         TryDamage(collision.collider);

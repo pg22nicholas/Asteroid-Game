@@ -10,10 +10,10 @@ public class RocketProjectile : HomingProjectile
     public override void OnHitAsteroid() {
         base.OnHitAsteroid();
 
-        Collider[] asteroidsInExplosion = GetAsteroidsInExplosion();
-        foreach (Collider asteroidCollider in asteroidsInExplosion) {
-            Destroy(asteroidCollider.gameObject);
-        }
+        //Collider[] asteroidsInExplosion = GetAsteroidsInExplosion();
+        //foreach (Collider asteroidCollider in asteroidsInExplosion) {
+        //    Destroy(asteroidCollider.gameObject);
+        //}
     }
     
     Collider[] GetAsteroidsInExplosion() {

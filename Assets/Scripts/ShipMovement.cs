@@ -8,6 +8,7 @@ public class ShipMovement : MonoBehaviour
     [SerializeField] private float m_turnSpeed = 30f;
     [SerializeField] private float m_acceleration = 10f;
     [SerializeField] private Rigidbody m_rigidBody;
+    [SerializeField] private GameOver m_gameOver;
 
     private float m_thrustInput;
     private float m_turnInput;
@@ -17,6 +18,12 @@ public class ShipMovement : MonoBehaviour
         if (m_rigidBody == null)
             Debug.LogError("RigidBody is null");
     }
+
+    private void OnDestroy()
+    {
+        m_gameOver.ToggleScreen(true);
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,7 +34,7 @@ public class ShipMovement : MonoBehaviour
             //throw new System.Exception("");
             Debug.LogError("Log");
             Destroy(gameObject); // Destroys the actual game object
-            Destroy(this); // Destroys ship script
+            //Destroy(this); // Destroys ship script
         }
     }
 
